@@ -1,0 +1,99 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAFAFA;
+}
+
+.secondary-container{
+    margin-top: 4rem;
+    margin-left: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.first-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.first-section-left{
+    max-width: 40%;
+}
+
+.first-section-left > h3{
+    font-size: 3.5rem;
+    /* font-weight: bold; */
+    margin-top: -1.5rem;
+    line-height: 6rem;
+}
+
+.first-section-left > p{
+    font-size: 1.25rem;
+    width: 82%;
+}
+
+.first-section-left > div{
+    margin-top: 3rem;
+    text-align: center;
+    width: 12rem;
+    font-size: 1rem;
+    background-color: #28A263;
+    color: #FAFAFA;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.Analytics_img{
+    width: 60%;
+}
+
+.second-section, .third-section{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.second-section-left,
+.third-section-right{
+    width: 45%;
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Revenue_img {
+    width: 34rem;
+    height: 13rem;
+    padding: 2rem;
+}
+
+.second-section-left > p, .third-section-right > p {
+    font-size: 1.8rem;    
+}
+
+.second-section-right , .third-section-left{
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    margin: 6%;
+}
+
+.second-section-right > h3, .third-section-left > h3{
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 3.4rem;
+}
+
+.second-section-right > p, .third-section-left > p{
+    margin: 0;
+    line-height: 2rem;
+}
+

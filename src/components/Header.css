@@ -1,0 +1,26 @@
+.header{
+    width: 95vw;
+    margin-top: 3rem;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: .1rem solid black;
+    background-color: #FFFFFF;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+    font-size: 1.5rem;
+}
+
+.header-left img{
+    height: 2rem;
+    width: 2rem;
+}
+
+.header button{
+    border-radius: 95%;
+}
