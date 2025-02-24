@@ -25,6 +25,8 @@
 
 .first-section-left > h3{
     font-size: 3.5rem;
+    font-family: var(--font-primary);
+    font-weight: 700;
     /* font-weight: bold; */
     margin-top: -1.5rem;
     line-height: 6rem;
@@ -92,8 +94,18 @@
     line-height: 3.4rem;
 }
 
-.second-section-right > p, .third-section-left > p{
+.second-section-right > p{
     margin: 0;
     line-height: 2rem;
+}
+
+.third-section-right > p{
+    font-weight: 400;
+    font-size: 1.75rem;
+    color: #FFFFFF;
+}
+
+.third-section-right {
+    background-color: #C6C6C6;
 }
 

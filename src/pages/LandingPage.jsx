@@ -2,6 +2,12 @@ import Header from "../components/Header"
 import Analytics from '../assets/LandingPage_Analytics1.png'
 import Revenue from '../assets/revenue.png'
 import './landingPage.css'
+import Testimonials from "../components/Testimonials"
+import FeatureGrid from "../components/FeatureGrid"
+import ButtonSections from "../components/ButtonsSections"
+import Footer from "../components/Footer"
+import pics_collections from '../assets/pics_collections.png'
+
 
 const LandingPage = () => {
   return (
@@ -66,7 +72,7 @@ const LandingPage = () => {
           </div>
 
           <div className="third-section-right">
-            <img className="Revenue_img" src={Revenue} alt="Revenue Data" />
+            <img className="Revenue_img" src={pics_collections} alt="Revenue Data" />
 
             <p>Share your content in limitless ways on your Spark</p>
 
@@ -76,6 +82,14 @@ const LandingPage = () => {
         </div>
 
         {/* The End of Third Section */}
+
+        < Testimonials />
+
+        <FeatureGrid />
+
+        {/* <ButtonSections /> */}
+
+        <Footer />
 
       </div>
 

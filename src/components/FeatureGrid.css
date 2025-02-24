@@ -1,0 +1,34 @@
+.integration-heading{
+  margin-left: 2rem;
+  font-size: 4rem;
+  color: #1E2330;
+}
+
+.feature-grid {
+  width: 97%;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  .feature-card {
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #FFFFFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon {
+    font-size: 2rem;
+  }
+
+  .cards-info > h4 {
+    font-size: 1.25rem;
+    color: 1E2330;
+  }
+  
