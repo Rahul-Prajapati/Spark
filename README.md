@@ -12,3 +12,14 @@ Pages folder is created with 4 different pages named as LandingPage, Signup, Sig
 install react-router-dom and react-tostify.
 
 Routes are created inside the App.jsx file for the Route of different pages using BrowserRouter, Routes and Route.
+
+The different components are created for Sign Up and Sign In features.
+
+SignUp Modal is created to render SignUp form errors to user.
+
+Signin and Signup features are added in Signin and Signup Pages.
+
+JWT is implemented to identify the registered user.
+
+react-hot-toast is installed for toast features.
+

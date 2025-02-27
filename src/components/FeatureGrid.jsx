@@ -5,7 +5,7 @@ import Bonfire from "../assets/Bonfire.svg"
 import Books from "../assets/Books.svg";
 import BuyMeAGift from "../assets/BuyMeAGift.svg";
 import Cameo from "../assets/Cameo.svg";
-import Clubhouse from "../assets/Clubhouse.svg";
+import Clubhouse from "../assets/ClubHouse.svg";
 import Community from "../assets/Community.svg";
 import ContactDetails from "../assets/ContactDetails.svg";
 

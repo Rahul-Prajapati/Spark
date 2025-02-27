@@ -1,0 +1,74 @@
+.modal-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.modal-container{
+    background: white;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  width: 30%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input{
+    border: .2px solid #666666;
+    border-radius: .2rem;
+    height: 1.5rem;
+}
+
+.form-title{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-title > h3 {
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333333;
+}
+
+.form-title > p {
+    margin: 1.5rem;
+    font-size: .75rem;
+    text-decoration: underline;
+    color: #28A263;
+    cursor: pointer;
+}
+
+.credentials-box{
+    font-size: .75rem;
+    display: flex;
+    flex-direction: column;
+    padding: .8rem;
+    gap: .5rem;
+}
+
+.checkbox-div{
+    padding: .8rem;
+}
+
+.btn-createAcc{
+    font-family: var(--font--primary);
+    padding: .8rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #E0E2D9;
+    border-radius: 3rem;
+    border: .1rem solid #E0E2D9;
+    width: 100%;
+}
+
+.error{
+    font-size: .5rem;
+    color: red;
+    background-color: #333333;
+}
