@@ -1,0 +1,61 @@
+/* Base styles for larger screens */
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .sidebar {
+    width: 250px;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .preview-section {
+    width: 40%;
+  }
+  
+  .dynamic-section {
+    width: 60%;
+  }
+  
+  /* Responsive styles for 1440px */
+  @media (max-width: 1440px) {
+    .preview-section, .dynamic-section {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive styles for 1014px */
+  @media (max-width: 1014px) {
+    .dashboard-container {
+      flex-direction: column;
+    }
+    .sidebar {
+      width: 100%;
+      text-align: center;
+    }
+    .main-content {
+      padding: 10px;
+    }
+    .preview-section, .dynamic-section {
+      width: 100%;
+    }
+  }
+  
+  /* Responsive styles for 2560px */
+  @media (min-width: 2560px) {
+    .dashboard-container {
+      max-width: 2000px;
+      margin: 0 auto;
+    }
+    .sidebar {
+      width: 300px;
+    }
+    .main-content {
+      font-size: 1.2rem;
+    }
+  }
+  

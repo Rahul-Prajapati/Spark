@@ -69,7 +69,7 @@ const AuthenticationPage = () => {
 
     const handleSignup = async () => {
         const { firstname, lastname, email, password, confirm_password } = formData;
-        const response = await fetch("http://localhost:5000/api/auth/signup", {
+        const response = await fetch(`${import.meta.env.VITE_SERVER_API}/api/auth/signup`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ firstname, lastname, email, password }),

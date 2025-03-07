@@ -2,73 +2,73 @@ import { useState } from 'react'
 import './SignUpModal.css'
 import { useNavigate } from 'react-router-dom';
 
-const SignUpModal = ({errors, closeModal}) => {
+const SignUpModal = ({ errors, closeModal }) => {
     const navigate = useNavigate();
-    
+
     return (
-        
-            <div className="modal-overlay" onClick={closeModal}>
-        
-        <div className="modal-container" onClick={(e) => e.stopPropagation()}>
 
-            <form className='form'>
+        <div className="modal-overlay" onClick={closeModal}>
 
-                <div className='form-title'>
-                    <h3>Create an account</h3>
+            <div className="modal-container" onClick={(e) => e.stopPropagation()}>
 
-                    <p onClick={() => navigate('/signin')}> Sign in instead</p>
+                <form className='form'>
 
-                </div>
+                    <div className='form-title'>
+                        <h3>Create an account</h3>
 
-                <div className='credentials-box'>
+                        <p onClick={() => navigate('/signin')}> Sign in instead</p>
 
-                    <label htmlFor="firstname">First name</label>
-                    <input />
-                    {errors.firstname && <p className="error">{errors.firstname}</p>}
+                    </div>
 
-                    <label htmlFor="lastname">Last name</label>
-                    <input />
-                    {errors.lastname && <p className="error">{errors.lastname}</p>}
+                    <div className='credentials-box'>
 
-                    <label htmlFor="email">Email</label>
-                    <input />
-                    {errors.email  && <p className="error">{errors.email }</p>}
+                        <label htmlFor="firstname">First name</label>
+                        <input />
+                        {errors.firstname && <p className="error">{errors.firstname}</p>}
 
+                        <label htmlFor="lastname">Last name</label>
+                        <input />
+                        {errors.lastname && <p className="error">{errors.lastname}</p>}
 
-                    <label htmlFor="password">Password</label>
-                    <input />
-                    {errors.password  && <p className="error">{errors.password }</p>}
-
-                    <label htmlFor="confirm-password">Confirm Password</label>
-                    <input />
-                    {errors.confirm_password && <p className="error">{errors.confirm_password}</p>}
-
-                </div>
-
-                <div className='checkbox-div'>
-                    <input
-                        type="checkbox"
-                        checked={!errors.terms} 
-                        readOnly
-                    />
-                    <label htmlFor="terms">
-                        By creating an account, I agree to our <span>Terms of use</span>  and <span>Privacy Policy</span>
-                    </label>
-
-                    {errors.terms && <p className="error">{errors.terms}</p>}
-
-                </div>
-
-               
-
-                <button className='btn-createAcc'>
-                    Create an account
-                </button>
-
-            </form>
+                        <label htmlFor="email">Email</label>
+                        <input />
+                        {errors.email && <p className="error">{errors.email}</p>}
 
 
-        </div>
+                        <label htmlFor="password">Password</label>
+                        <input />
+                        {errors.password && <p className="error">{errors.password}</p>}
+
+                        <label htmlFor="confirm-password">Confirm Password</label>
+                        <input />
+                        {errors.confirm_password && <p className="error">{errors.confirm_password}</p>}
+
+                    </div>
+
+                    <div className='checkbox-div'>
+                        <input
+                            type="checkbox"
+                            checked={!errors.terms}
+                            readOnly
+                        />
+                        <label htmlFor="terms">
+                            By creating an account, I agree to our <span>Terms of use</span>  and <span>Privacy Policy</span>
+                        </label>
+
+                        {errors.terms && <p className="error">{errors.terms}</p>}
+
+                    </div>
+
+
+
+                    <button className='btn-createAcc'>
+                        Create an account
+                    </button>
+
+                </form>
+
+
+            </div>
 
         </div>
     )

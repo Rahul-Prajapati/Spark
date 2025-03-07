@@ -14,7 +14,7 @@ const Signin = () => {
 
     const handleLogin = async () => {
         const { username, password } = formData;
-        const response = await fetch("http://localhost:5000/api/auth/signin", {
+        const response = await fetch(`${import.meta.env.VITE_SERVER_API}/api/auth/signin`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ username, password }),

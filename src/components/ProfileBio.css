@@ -1,0 +1,122 @@
+
+.ProfileComponent{
+    /* flex-grow: 1; */
+    padding: 1rem;
+}
+
+
+.profile-heading{
+    font-family: var(--font-secondary);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+.ProfileContainer{
+    font-family: var(--font-secondary);
+    background-color: #FFFFFF;
+    width: 100%;
+    border-radius: 1rem; 
+
+}
+
+.uploadPicContainer{
+    display: flex;
+    padding: 1rem;
+    gap: .5rem;
+}
+
+.imgDiv{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-box{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-around;   
+}
+
+.btn-box > button{
+    padding: .5rem;
+    border-radius: 1rem;
+    font-family: var(--font-secondary);
+}
+
+.btn-Imgselect{
+    /* background-color: #28A263;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none; */
+
+  background-color: #28A263;
+  color: #FFFFFF;
+  padding: .5rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  /* display: inline-block; */
+  font-family: var(--font-secondary);
+}
+
+.btn-ImgRemove{
+background-color: #FFFFFF;
+border: 1px solid #E0E2D9;
+color: #A8AAA2;
+font-weight: 600;
+    font-size: 1rem;
+}
+
+.profileDp{
+
+    width: 6rem;
+    height: 6rem;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.profile-info{
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 1rem; 
+}
+
+.Title-section{
+    background-color: #F6F7F5;
+    border-radius: .5rem; 
+}
+
+.label{
+    font-size: .8rem;
+    color: #676B5F;
+    font-weight: 400;
+    margin: .5rem;
+}
+
+.username {
+    font-size: .8rem;
+    color: #000000;
+    font-weight: 400;
+    margin: .5rem;
+   
+}
+
+.bio-info{
+    background-color: #F6F7F5;
+    border-radius: .5rem;    
+}
+
+.bio-input{
+    background-color: #F6F7F5; 
+    border: none;
+    width: 95%;   
+    color: #000000;
+    padding: .5rem;
+}

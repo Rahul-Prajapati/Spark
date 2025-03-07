@@ -6,26 +6,31 @@ import Signup from './pages/Signup'
 import Signin from './pages/Signin'
 import Dashboard from './pages/Dashboard'
 import AboutYourself from './pages/AboutYourself'
+import { UserProvider } from './Context/UserContext'
+import { ProfileDataProvider } from './Context/ProfileDataContext'
 
 function App() {
   return (
     <>
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={ <LandingPage /> } />
+      <UserProvider>
+        <ProfileDataProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<LandingPage />} />
 
-        <Route path='/signup' element={ <Signup /> } />
+            <Route path='/signup' element={<Signup />} />
 
-        <Route path='/signin' element={ <Signin /> } />
+            <Route path='/signin' element={<Signin />} />
 
-        <Route path='/aboutyourself' element={ <AboutYourself /> } />
+            <Route path='/aboutyourself' element={<AboutYourself />} />
 
-        <Route path='/dashboard' element={ <Dashboard /> } />
+            <Route path='/dashboard' element={<Dashboard />} />
 
-      </Routes>
-      <Toaster />
-    </BrowserRouter>
-    
+          </Routes>
+          <Toaster />
+        </BrowserRouter>
+        </ProfileDataProvider>
+      </UserProvider>
     </>
   )
 }
