@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect } from "react";
+import toast from 'react-hot-toast'
 
 export const ProfileDataContext = createContext();
 
@@ -43,13 +44,27 @@ export const ProfileDataProvider = ({ children }) => {
     }, [userId]);
 
     // Function to update profile data dynamically
+    // const updateProfileData = (key, value) => {
+    //     setProfileData(prevData => ({ ...prevData, [key]: value }));
+
+    // };
+
     const updateProfileData = (key, value) => {
-        setProfileData(prevData => ({ ...prevData, [key]: value }));
+        setProfileData(prevData => {
+            const updatedData = { ...prevData, [key]: value };
+    
+            // Update localStorage immediately
+            localStorage.setItem("profileData", JSON.stringify(updatedData));
+    
+            return updatedData;
+        });
     };
 
     // Function to save profile data to backend
     const saveProfile = async (userId) => {
         try {
+            
+            console.log("inside SaveProfile")
             const response = await fetch(`${import.meta.env.VITE_SERVER_API}/api/user/profile/${userId}`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
@@ -59,8 +74,10 @@ export const ProfileDataProvider = ({ children }) => {
             if (!response.ok) throw new Error("Failed to save data");
 
             console.log("Profile updated successfully");
+            toast.success("Profile updated successfully")
         } catch (error) {
             console.error("Error saving profile:", error);
+            toast.error("Something went wrong")
         }
     };
 

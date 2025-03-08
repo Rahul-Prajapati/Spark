@@ -7,7 +7,8 @@ function Banner() {
   const { user } = useUser();
   const { profileData, updateProfileData, saveProfile } = useContext(ProfileDataContext);
 
-  const userId = user._id;
+  const userId = user?._id;
+  // const userId = user._id;
 
   const isValidHex = (hex) => /^#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$/.test(hex);
   // const [color, setColor] = useState("#000000");
@@ -107,7 +108,7 @@ function Banner() {
       </div>
 
       <div className='save-Div'>
-      <button className='btn-save' onClick={saveData}>Save</button>
+      <button className='btn-save' onClick={() => saveProfile(userId)}>Save</button>
       </div> 
 
     </div>

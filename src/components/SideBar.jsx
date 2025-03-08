@@ -3,7 +3,7 @@ import SparkLogo from "../assets/spark_flame_icon.svg"
 import  LinksIcon  from "../assets/Links.svg";
 import  AppearanceIcon  from "../assets/Appearance.svg";
 import  AnalyticsIcon  from "../assets/Analytics.svg";
-import  SettingsIcon  from "../assets/setting.svg";
+import  SettingsIcon  from "../assets/Setting.svg";
 import "./Sidebar.css";
 
 const SideBar = ({ selectedSection, setSelectedSection }) => {

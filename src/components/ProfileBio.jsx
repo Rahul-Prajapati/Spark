@@ -63,7 +63,7 @@ function ProfileBio() {
 
                 <div className='bio-info'>
                     <h6 className='label'>Bio</h6>
-                    <textarea className='bio-input' placeholder='Bio' onChange={(e) => updateProfileData("bio", e.target.value)} />
+                    <textarea className='bio-input' placeholder='Bio' value={profileData.bio} onChange={(e) => updateProfileData("bio", e.target.value)} />
                 </div>
 
             </div>
